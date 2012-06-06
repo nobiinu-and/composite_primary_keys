@@ -33,7 +33,7 @@ module ActiveRecord
               hash[name] = nil
               hash
             end
-            update_counter(-scope.update_all(updates))
+            update_counter(-scope.delete_all(updates))
           end
         end
       end
